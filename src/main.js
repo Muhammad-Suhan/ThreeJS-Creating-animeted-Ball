@@ -42,6 +42,7 @@ scene.add(hemiLight);
 // OrbitControls (✅ declared before use)
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
+controls.dampingFactor = 0.03
 
 // Resize handler
 window.addEventListener('resize', () => {
